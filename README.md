@@ -1,0 +1,1 @@
+# prusti-extern-spec-demo
