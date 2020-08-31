@@ -5,6 +5,7 @@ mod std {
     mod mem {
         use prusti_contracts::*;
 
-        pub fn swap<T: std::cmp::PartialEq + Copy>(a: &mut T, b: &mut T);
+        #[ensures(*a == old(*b) && *b == old(*a))]
+        pub fn swap(a: &mut i32, b: &mut i32);
     }
 }

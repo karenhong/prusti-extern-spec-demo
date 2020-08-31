@@ -11,10 +11,4 @@ impl<T> std::option::Option<T> {
     #[pure]
     #[ensures(self.is_some() == !result)]
     pub fn is_none(&self) -> bool;
-
-    #[requires(self.is_some())]
-    pub fn unwrap(self) -> T;
-
-    #[requires(self.is_some())]
-    pub fn expect(self, msg: &str) -> T;
 }

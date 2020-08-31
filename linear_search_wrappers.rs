@@ -1,6 +1,4 @@
 /// This example is copied from /prusti-dev/prusti/tests_old/verify/pass/generic/linear_search.rs
-/// and uses features that are currently broken
-
 extern crate prusti_contracts;
 
 pub struct VecWrapper<T> {
